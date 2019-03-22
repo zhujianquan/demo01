@@ -13,6 +13,9 @@ public class LamadaTest {
         // 类型声明
         MathOperation addition = (int a, int b) -> a + b+"";
 
+        //            intToString(1,2);
+        ((MathOperation) (int a, int b) -> "haha" + a * b).intToString(1,5);
+
         // 不用类型声明
         MathOperation subtraction = (a, b) -> a - b+"";
 

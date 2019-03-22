@@ -15,6 +15,7 @@ public class MainTest {
                     Singleton singleton =  Singleton.getSingleton(index);
                     System.out.println("第"+index+"次名称:"+singleton.getName()+"年龄:"+singleton.getAge()+"性别:"+singleton.getSex());
                 }).start();
+
 //            new Thread(() -> {
 //                Singleton.getSingleton();
 //            }).start();
