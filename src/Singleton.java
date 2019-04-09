@@ -14,15 +14,14 @@ public class Singleton {
     private Singleton(){}
 
     public static Singleton getSingleton(int index){
-        if (singleton==null){
-            synchronized (Singleton.class){
-                if (singleton==null){
-                    singleton = new Singleton();
-                    singleton.name="zhangsan";
-                    singleton.age=100;
-                    singleton.sex="男";
-                    System.out.println(singleton.toString()+index);
-                }
+        if (singleton==null) synchronized (Singleton.class) {
+            if (singleton == null) {
+                singleton = new Singleton();
+//                Object clone = singleton.clone();
+                singleton.name = "zhangsan";
+                singleton.age = 100;
+                singleton.sex = "男";
+                System.out.println(singleton.toString() + "---" + index);
             }
         }
         return singleton;

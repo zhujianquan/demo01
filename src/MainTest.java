@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * @ClassName MainTest
  * @Description TODO
@@ -9,6 +11,11 @@ public class MainTest {
         System.out.println();
         System.err.println();
 
+//        Iterator
+//        Collection
+//        Hashtable
+//            HashMap
+//        List
         for (int i=0;i<100;i++){
             final int index=i;
             new Thread(()->{
