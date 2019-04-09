@@ -32,4 +32,8 @@ public class MainTest {
     public static void test(){
 
     }
+
+    public static void test1(){
+
+    }
 }
